@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class NPCMovement : MonoBehaviour
 {
-    public float speed = 30.0f;
+    private float speed = 0.1f;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -13,6 +13,6 @@ public class NPCMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-         
+         transform.Translate(Vector3.forward * speed);
     }
 }
